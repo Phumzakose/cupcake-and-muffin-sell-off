@@ -1,0 +1,45 @@
+body {
+	background-color: lightgreen;
+}
+
+.section img {
+	width: 100px;
+}
+
+.button {
+	margin: 1em;
+	/* border: 0.25em solid green; */
+	padding: 1em;
+	border-radius: 0.25em;	
+
+	width: 10em;
+	/* border: 0.25em solid lightcoral; */
+	padding :1em;
+	/* background-color: lightcoral; */
+	font-family: inherit;
+	font-size: 1rem;
+}
+
+.message {
+	font-size: 100%;
+	margin: 1em auto;
+	width: 90%;
+	padding: 1em;
+	background-color: lightcoral;
+	border-radius: 1em;	
+}
+
+.price {
+	padding : 1em;
+	border : 0.25em solid darkcyan;
+	border-radius: 1em;	
+}
+
+.sections {
+	display: flex;
+}
+
+.section {
+	flex : 1;
+	padding: 1em;
+}
