@@ -4,15 +4,17 @@ var muffinsCounter = document.querySelector(".muffin_count");
 var cupcakesCounter = document.querySelector(".cupcake_count");
 var message = document.querySelector(".message");
 
-let cakesInstance = Bakery();
+let muffinInstance = Bakery(cupcakes, muffins);
 muffins.addEventListener("click", function () {
-  muffinsCounter.innerHTML = cakesInstance.muffinCount();
-  message.innerHTML = cakesInstance.sellMuffins();
-  // message.innerHTML = cakesInstance.count();
+  muffinInstance.set_muffin("muffin");
+  muffinsCounter.innerHTML = muffinInstance.getMuffin();
+  message.innerHTML = muffinInstance.sell_muffin();
+  message.innerHTML = muffinInstance.count();
 });
-
+let cupcakeInstance = Bakery(cupcakes, muffins);
 cupcakes.addEventListener("click", function () {
-  cupcakesCounter.innerHTML = cakesInstance.cupcakeCount();
-  message.innerHTML = cakesInstance.sellCupcakes();
-  //message.innerHTML = cakesInstance.count();
+  cupcakeInstance.set_cupcake("cupcake");
+  cupcakesCounter.innerHTML = cupcakeInstance.getCupcake();
+  message.innerHTML = cupcakeInstance.sell_cupcake();
+  message.innerHTML = cupcakeInstance.count();
 });
